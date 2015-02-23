@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>Google Maps App</title>
+		
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="mainstyle.css"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?sensor=false">
+		</script>
+		<script type="text/javascript" src = "mapsApp.js"></script>
+		<style type="text/css">
+		  #map-canvas { width:80%; float:left;}
+		  #side-col {border-style: outset; border-color:#88C0CA; overflow: auto; padding-left: 10px; 
+			background-color:#CDCDCD;}
+		  #m_title,#m_story { width:100%}		 
+		  #m_img {}
+		  div.m_dat:hover{background-color:#D7D7D7;}
+		</style>	
+	</head>
+
+<body>
+	<div id = "header_div">
+		<ul id = "nav_bar" style = "float:left;">
+			<li><a href="index.html">Home</a></li>
+			<li><a class="current" href="mapsApp.html">Maps App</a></li>
+		</ul>
+		<div style= "border-color:#CDCDCD;border-style:outset;float:right;margin-right:5px;
+			margin-top:3px;color:#ffffff;">&nbsp;Instructions:
+		<ul><li>Right Click to add a Marker</li>
+		<li>Press "Add Info" button when done</li>
+		<li>Click Marker to See Info</li></ul>
+		</div>
+	</div>
+
+	<div id = "content">
+		<div id="map-canvas"></div>
+		<div id="side-col">Php stuff to go here!</div>
+	</div>
+
+</body>
+</html>
